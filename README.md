@@ -21,7 +21,7 @@
 
 * [`debian` Dockerfile](https://github.com/mkenney/docker-npm/blob/master/Dockerfile)
 
-  ![build status](https://travis-ci.org/mkenney/docker-npm.svg?branch=debian) ![Image size](https://img.shields.io/badge/image size-328MB-blue.svg)
+  ![build status](https://travis-ci.org/mkenney/docker-npm.svg?branch=debian) ![Image size](https://img.shields.io/badge/image size-~300MB-blue.svg)
   * ![bower](https://img.shields.io/badge/bower-v1.7.9-ffcc2f.svg)
   * ![generate-md](https://img.shields.io/badge/generate%20md-v3.1.8-000000.svg)
   * ![grunt](https://img.shields.io/badge/grunt-v1.2.0-e48632.svg)
@@ -50,7 +50,7 @@ Installation is just a matter of putting them somewhere in your path and making 
 
 #### alpine:3.4
 
-The Alpine version has the same version of `node` as the official image compiled from source and is very small and lightweight
+In the Alpine version `node` is compiled from source and is very small and lightweight
 
 * `wget -nv -O ~/bin/bower https://raw.githubusercontent.com/mkenney/docker-npm/master/bin/bower && chmod 0755 ~/bin/bower`
 * `wget -nv -O ~/bin/generate-md https://raw.githubusercontent.com/mkenney/docker-npm/master/bin/generate-md && chmod 0755 ~/bin/generate-md`
@@ -61,7 +61,7 @@ The Alpine version has the same version of `node` as the official image compiled
 
 #### debian:jessie
 
-The Debian version is based on `node:latest` but the image is fairly large
+The Debian version is based on `node:latest` and the image is fairly large. Some build tools (gcc, g++, make, etc.) so packages like `node-sass` can use them
 
 * `wget -nv -O ~/bin/bower https://raw.githubusercontent.com/mkenney/docker-npm/debian/bin/bower && chmod 0755 ~/bin/bower`
 * `wget -nv -O ~/bin/generate-md https://raw.githubusercontent.com/mkenney/docker-npm/debian/bin/generate-md && chmod 0755 ~/bin/generate-md`
