@@ -29,6 +29,7 @@ RUN set -x \
         grunt-cli \
         bower \
         markdown-styles \
+        yarn \
 
 ##############################################################################
 # UTF-8 Locale, timezone
