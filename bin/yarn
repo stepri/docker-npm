@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-TAG=latest
-BRANCH=master
+TAG=7.0-debian
+BRANCH=7.0-debian
 SCRIPT=yarn
 
 if [ "self-update" = "$1" ]; then

@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-TAG=debian
-BRANCH=debian
+TAG=7.0-debian
+BRANCH=7.0-debian
 SCRIPT=node
 
 if [ "self-update" = "$1" ]; then
