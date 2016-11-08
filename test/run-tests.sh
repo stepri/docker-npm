@@ -20,7 +20,7 @@ if [ "" == "$PARENT_BRANCH" ]; then PARENT_BRANCH=master; fi
 
 get_test_suite() {
     case $1 in
-        Dockerfile|test/build.sh|all)
+        Dockerfile|test/build.sh|release)
             echo "build;install;bower;md;grunt;gulp;node;npm;yarn"
             ;;
         test/run-tests.sh)
@@ -134,12 +134,14 @@ run_tests=
 if [ "" != "$1" ]; then
     add_test $1
 else
+    test_found=0
     for file in $(git diff --name-only $PARENT_BRANCH $CURRENT_BRANCH); do
         add_test $file
+        test_found=1
     done
 fi
-if [ "$CURRENT_BRANCH" == "$PARENT_BRANCH" ]; then
-    add_test all
+if [ "$CURRENT_BRANCH" == "$PARENT_BRANCH" ] || [ "0" == "$test_found" ]; then
+    add_test release
 fi
 
 execute_tests $verbose
