@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-TAG=latest
-BRANCH=master
+TAG=7.0-alpine
+BRANCH=7.0-alpine
 SCRIPT=node
 INSTALL_SCRIPT=https://raw.githubusercontent.com/mkenney/docker-npm/master/bin/install.sh
 
