@@ -1,4 +1,4 @@
-FROM node:7.0-wheezy
+FROM node:6.9-wheezy
 
 MAINTAINER Michael Kenney <mkenney@webbedlam.com>
 
