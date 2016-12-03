@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-TAG=7.0-alpine
-BRANCH=7.0-alpine
+TAG=6.9-alpine
+BRANCH=6.9-alpine
 SCRIPT=bower
 INSTALL_SCRIPT=https://raw.githubusercontent.com/mkenney/docker-npm/master/bin/install.sh
 
