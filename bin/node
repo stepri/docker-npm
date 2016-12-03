@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-TAG=7.0-debian
-BRANCH=7.0-debian
+TAG=6.9-debian
+BRANCH=6.9-debian
 SCRIPT=node
 INSTALL_SCRIPT=https://raw.githubusercontent.com/mkenney/docker-npm/master/bin/install.sh
 
