@@ -17,7 +17,6 @@ RUN set -x \
     && apk update \
     && apk add \
         libkrb5-dev \
-        alpine-sdk \
         ca-certificates \
         curl \
         g++ \
