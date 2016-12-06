@@ -16,6 +16,7 @@ RUN set -x \
     && echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
     && apk update \
     && apk add \
+        alpine-sdk \
         ca-certificates \
         curl \
         g++ \
